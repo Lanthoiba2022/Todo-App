@@ -1,13 +1,8 @@
 const jwt=require("jsonwebtoken");
+const jwtPassword="secret";
 
-//decode,verify,generate
-
-const value={
-    name:"harkirat",
-    accNum: 123123123
+function signjwt(username,password){
+    const signature =jwt.sign({
+        username
+    })
 }
-
-//jwt
-
-const token=jwt.sign(value,"secret");
-console.log(token);
